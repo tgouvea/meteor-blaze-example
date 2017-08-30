@@ -58,4 +58,5 @@ Template.body.events({
 
 Template.body.onCreated(function bodyOnCreated() {
     this.state = new ReactiveDict();
+    Meteor.subscribe('tasks');
   });
